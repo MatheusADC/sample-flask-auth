@@ -15,7 +15,7 @@ login_manager.init_app(app)
 
 @app.route("/login", methods=["POST"])
 def login():
-    data = request.json()
+    data = request.json
     username = data.get("username")
     password = data.get("password")
 

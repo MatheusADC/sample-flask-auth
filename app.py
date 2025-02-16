@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from models.user import User
 from database import db
-from flask_login import LoginManager, login_user, current_user, logout_user, login_required
+from flask_login import LoginManager, login_user, logout_user, login_required
 
 app = Flask(__name__)
 

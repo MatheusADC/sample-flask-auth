@@ -3,12 +3,12 @@ Repository created to store the authentication API code with the database.
 
 # <img src="https://github.com/user-attachments/assets/2bd91f82-43a7-44c6-8fb3-eaa3ca20089e" alt="terminal icon" width="28"> Commands
 
-## <img src="https://github.com/user-attachments/assets/10d3fd5b-ab3c-4ce0-bf22-68587cae9deb" alt="books icon" width="24"> Installing and updating dependencies
+## <img src="https://github.com/user-attachments/assets/9bd14bb5-8e8c-4050-ac18-1383038c84a5" alt="books icon" width="24"> Installing and updating dependencies
 ```
 pip install -r requirements.txt --upgrade
 ```
 
-## <img src="https://github.com/user-attachments/assets/ddfc24ed-a6e6-4975-b9df-e66091b743b5" alt="database icon" width="24"> Creating the database
+## <img src="https://github.com/user-attachments/assets/f8992568-f0e4-4f98-84f1-c877ff0d471b" alt="database icon" width="24"> Creating the database
 ### Using Flask commands
 ```
 flask shell

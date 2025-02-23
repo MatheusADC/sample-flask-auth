@@ -1,0 +1,15 @@
+services:
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_USER: 'YOUR_USER'
+      MYSQL_PASSWORD: 'YOUR_PASSWORD'
+      MYSQL_DATABASE: 'YOUR_DATABASE'
+      MYSQL_ROOT_PASSWORD: 'YOUR_ROOT_PASSWORD'
+    ports:
+      - 'port:port'
+    expose:
+      - 'port'
+    volumes:
+      - 'YOUR_VOLUMES_PATH'

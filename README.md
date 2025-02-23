@@ -54,3 +54,9 @@ db.session.commit()
 ```
 exit()
 ```
+
+## <sub><img src="https://github.com/user-attachments/assets/7578230c-47a3-41c6-ac71-3925ddb5fc20" alt="Docker icon" width="28"></sub> Container
+### Initialize and run a container
+```
+docker-compose up
+```

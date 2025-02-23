@@ -6,7 +6,7 @@ from flask_login import LoginManager, login_user, current_user, logout_user, log
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = "YOUR_KEY"
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///YOUR_DATABASE_NAME.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://YOUR_USERNAME:YOUR_PASSWORD@YOUR_HOST:PORT/YOUR_DATABASE'
 
 login_manager = LoginManager()
 
@@ -39,7 +39,6 @@ def logout():
     return jsonify({"message": "Logout realizado com sucesso!"})
 
 @app.route('/user', methods=["POST"])
-@login_required
 def create_user():
     data = request.json
     username = data.get("username")

@@ -8,7 +8,11 @@ Repository created to store the authentication API code with the database.
 pip install -r requirements.txt --upgrade
 ```
 
-## <img src="https://github.com/user-attachments/assets/f8992568-f0e4-4f98-84f1-c877ff0d471b" alt="database icon" width="24"> Creating the database
+```
+pip install bcrypt==4.1.2
+```
+
+## <img src="https://github.com/user-attachments/assets/f8992568-f0e4-4f98-84f1-c877ff0d471b" alt="database icon" width="24"> Creating a database
 ### Using Flask commands
 ```
 flask shell
@@ -29,13 +33,34 @@ db.session.commit()
 exit()
 ```
 
+## <sub><img src="https://img.icons8.com/?size=100&id=92061&format=png&color=000000" alt="database icon" width="28"></sub> Deleting a database
+### Using Flask commands
+```
+flask shell
+```
+
+### Indicating the removal of the tables
+```
+db.drop_all()
+```
+
+### Recording the removal of the database
+```
+db.session.commit()
+```
+
+### Exiting the terminal
+```
+exit()
+```
+
 ## <img src="https://github.com/user-attachments/assets/df9d2ef7-42e7-4454-ac81-c92832d0c6dc" alt="user icon" width="24"> Creating the user
 ### Using Flask commands
 ```
 flask shell
 ```
 
-### Creating the user
+### Creating a user
 ```
 user = User(username="CHOSEN_USERNAME", password="CHOSEN_PASSWORD")
 ```
